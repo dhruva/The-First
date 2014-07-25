@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+
+  <title>Svaad Restaurant Profile</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <style type="text/css">
+      body{
+        padding-top: 50px;
+      }
+      .restaurant-jumbotron {
+        padding-bottom: 20px;
+        padding-top: 140px;
+      }
+      .restaurant-jumbotron h1, .restaurant-jumbotron p{
+        color: #555;
+      }
+      .restaurant-nav-heading h1{
+        margin-top: 0px;
+      }
+      .restaurant-jumbotron h1 .restaurant-location{
+        font-style: italic;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .restaurant-time-status{
+        margin-left: 10px;
+
+      }
+
+      .btn-restaurant-menu{
+        background-color: #eee;
+      }
+
+      .list-group.restaurant-sidebar{
+        background-color: #eee;
+      }
+      .restaurant-sidebar .list-group-item{
+        border-style: none solid none none;
+        border-width: 0 1px 0 0;
+        margin-bottom: 0px;
+        background-color: #eee;
+      }
+      .restaurant-sidebar .list-group-item h4{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .restaurant-sidebar a.list-group-item.active,
+          .restaurant-sidebar a.list-group-item.focus{
+            background-color: #eee;
+            border-color: #eee;
+            color: #555;
+            font-weight: bold;
+      }
+      .restaurant-sidebar a.list-group-item.active > h4{
+        font-weight: bold;
+      }
+      .restaurant-sidebar .list-group-item:first-child{
+        border-radius: 0px;
+      }
+      .restaurant-sidebar a.list-group-item:hover{
+        background-color: #dedede;
+
+      }
+    </style>
+
+    <body>
+
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Svaad</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron restaurant-jumbotron">
+        <div class="container">
+          <h1>
+            <span class="restaurant-name">Soups N Salads</span>
+            <span class="restaurant-location">Jublee Hills</span>
+          </h1>
+          <p>
+            <span class="restaurant-contact"><i class="fa fa-phone"></i>&nbsp;&nbsp;9848472324</span>
+            <span class="restaurant-time-status">
+              <button class="btn btn-xs btn-success btn-border-only"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Open Now, untill 14:30</button>
+            </span>
+          </p>
+          <p>
+            <i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Jubilee Towers, 1st Floor, Road Number 36, Jubilee Hills, Hyderabad
+            <button class="btn btn-xs btn-warning btn-border-only">Get Directions</button>
+          </p>
+          
+          <p>
+            <button class="btn btn-sm btn-default"><i class="fa fa-facebook"></i></button>
+            <button class="btn btn-sm btn-default"><i class="fa fa-google"></i></button>
+            <button class="btn btn-sm btn-default"><i class="fa fa-twitter"></i></button>
+            <button class="btn btn-sm btn-default">more info&nbsp;&nbsp;<i class="fa fa-arrow-down"></i></button>
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <div class="list-group restaurant-sidebar">
+              <a href="#" class="list-group-item active"><h4>Social Menu</h4></a>
+              <a href="#" class="list-group-item"><h4>Most Loved</h4></a>
+              <a href="#" class="list-group-item"><h4>In your Wishlist</h4></a>
+              <div class="s-divider"></div>
+              <a href="#" class="list-group-item active">Soups</a>
+              <a href="#" class="list-group-item">Salads</a>
+              <a href="#" class="list-group-item">Cicken</a>
+              <a href="#" class="list-group-item">Sea Food</a>
+              <a href="#" class="list-group-item">Chinese</a>
+              <a href="#" class="list-group-item">Asian</a>
+              <a href="#" class="list-group-item">Desserts</a>
+            </div>
+          </div><!--/span-->
+
+          <div class="col-xs-12 col-sm-9 restaurant-content">
+            <p class="visible-xs">
+              <button type="button" class="btn btn-default btn-md btn-block btn-restaurant-menu" data-toggle="offcanvas"> <i class="fa fa-reorder"></i>&nbsp;&nbsp;Social Menu</button>
+            </p>
+            <div class="restaurant-nav-heading">
+              <h1>Discover what people love to eat here</h1>
+            </div>
+            <div class="row">
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+              <div class="col-6 col-sm-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div><!--/span-->
+            </div><!--/row-->
+          </div><!--/span-->
+
+
+        </div><!--/row-->
+
+
+
+
+      </div> <!-- /container -->
+      <footer>
+        <div class="container">
+          <p>&copy; Svaad 2014</p>
+        </div>  
+      </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('[data-toggle=offcanvas]').click(function () {
+          $('.row-offcanvas').toggleClass('active')
+        });
+      });
+    </script>
+  </body>
+  </html>
